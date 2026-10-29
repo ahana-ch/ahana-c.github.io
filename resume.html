@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahana Chaudhury - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --primary: #4f46e5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--text);
+      line-height: 1.5;
+      background: #f9fafb;
+      padding: 2rem 1rem;
+    }
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.925rem;
+      color: var(--muted);
+    }
+    .contact-bar a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .section {
+      margin-bottom: 1.75rem;
+    }
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #111827;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.35rem;
+      margin-bottom: 0.85rem;
+    }
+    .summary-text {
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+    .item-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #111827;
+    }
+    .item-subtitle {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .item-meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-weight: 500;
+      text-align: right;
+    }
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .bullet-list li {
+      font-size: 0.925rem;
+      color: #374151;
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+    }
+    .skill-cat {
+      margin-bottom: 0.6rem;
+      font-size: 0.925rem;
+      line-height: 1.5;
+    }
+    .skill-label {
+      font-weight: 600;
+      color: #111827;
+    }
+    .actions-bar {
+      max-width: 850px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-back {
+      background: #e5e7eb;
+      color: #374151;
+      border: none;
+    }
+    .btn-print {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+    }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .resume-container { box-shadow: none; padding: 0; }
+      .actions-bar { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions-bar">
+    <a href="../../index.html" class="btn btn-back">&larr; Back to Portfolio</a>
+    <div style="display: flex; gap: 0.75rem;">
+      <a href="https://drive.google.com/file/d/1oFETfltOM-yycKnx8bOIbJI--kqWb2QK/view" target="_blank" rel="noopener noreferrer" class="btn" style="background: #0f172a; color: #ffffff;">Open PDF on Google Drive &nearr;</a>
+      <button onclick="window.print()" class="btn btn-print">Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="resume-container">
+    <header class="header">
+      <h1>AHANA CHAUDHURY</h1>
+      <div class="contact-bar">
+        <span>Bengaluru, India</span>
+        <span>&bull;</span>
+        <a href="tel:+919830177941">+91-9830177941</a>
+        <span>&bull;</span>
+        <a href="mailto:ahana.chau99@gmail.com">ahana.chau99@gmail.com</a>
+        <span>&bull;</span>
+        <a href="https://www.linkedin.com/in/ahana-chaudhury/" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Technical Writer and Documentation Specialist with 5+ years of experience creating and managing enterprise documentation across Banking & Financial Services, Pharmaceutical, Healthcare, and Digital Platform domains. Experienced across the full documentation lifecycle, including requirements gathering, technical writing, structured authoring, peer review, stakeholder approvals, publishing, governance, maintenance, and content lifecycle management. Skilled in SOPs, API documentation, developer documentation, user guides, knowledge bases, process documentation, troubleshooting content, and documentation governance, with hands-on experience in OpenText, Adobe RoboHelp, Confluence, AEM, ServiceNow, SharePoint, DITA, REST APIs, OpenAPI/Swagger, Markdown, Git, and Docs-as-Code workflows.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="item-header">
+        <div>
+          <div class="item-title">University of Calcutta</div>
+          <div class="item-subtitle">Bachelor of Arts in English Literature</div>
+        </div>
+        <div class="item-meta">
+          <div>Kolkata, India</div>
+          <div>2018 &ndash; 2021</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div style="margin-bottom: 1.5rem;">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Wells Fargo</div>
+            <div class="item-subtitle">Procedure Writer</div>
+          </div>
+          <div class="item-meta">
+            <div>Bengaluru, India</div>
+            <div>Mar 2024 &ndash; Present</div>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Author, review, and publish enterprise SOPs and procedural documentation supporting Corporate Investment Banking and Commercial Real Estate business units using OpenText.</li>
+          <li>Manage end-to-end documentation publishing workflows, including peer reviews, stakeholder approvals, governance checks, controlled releases, and content updates.</li>
+          <li>Collaborate with SMEs, compliance teams, QA teams, and business stakeholders to ensure documentation accuracy, consistency, and alignment with internal policies and standards.</li>
+          <li>Maintain procedure control identifiers, version tracking, periodic reviews, documentation lifecycle management, and content updates to support governance and operational compliance.</li>
+          <li>Contribute to documentation migration and re-platforming initiatives, including transition of SOPs from OpenText to the Wells Fargo Policy Governance Platform.</li>
+          <li>Maintain SharePoint-based trackers and coordinate documentation lifecycle activities supporting timely publication, annual review completion, process visibility, and documentation governance.</li>
+          <li>Contribute to documentation standardization and process improvement initiatives aimed at improving consistency and streamlining publishing practices across distributed operational teams.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="item-header">
+          <div>
+            <div class="item-title">Cognizant Technology Solutions</div>
+            <div class="item-subtitle">Technical Writer</div>
+          </div>
+          <div class="item-meta">
+            <div>Chennai, India</div>
+            <div>Sep 2021 &ndash; Mar 2024</div>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Created and maintained enterprise documentation including knowledge base articles, user guides, administrator guides, troubleshooting documentation, FAQs, SOPs, and onboarding materials across pharmaceutical, financial services, and digital platform domains.</li>
+          <li>Developed end-user documentation and administrator guides for enterprise applications and digital platforms using Adobe RoboHelp and Confluence.</li>
+          <li>Created and maintained API documentation and contributed to DITA-based structured authoring and documentation workflows for enterprise applications.</li>
+          <li>Applied developer-focused documentation practices involving REST APIs, OpenAPI/Swagger, JSON, Markdown, Git, Git workflows, Docs-as-Code, and documentation tooling to support structured technical content and API documentation.</li>
+          <li>Collaborated with developers, QA teams, product owners, SMEs, and client stakeholders to gather technical requirements and translate complex workflows into clear, user-focused documentation.</li>
+          <li>Created multimedia learning and support resources including walkthrough videos, Quick Reference Guides (QRGs), troubleshooting content, and end-user learning materials.</li>
+          <li>Maintained enterprise web content using Adobe Experience Manager (AEM) and managed documentation repositories through ServiceNow and Confluence.</li>
+          <li>Identified and resolved content inconsistencies, broken knowledge links, and documentation governance issues through technical editing, peer reviews, content management, and cross-functional collaboration.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Core Skills</h2>
+      <div class="skill-cat">
+        <span class="skill-label">Technical Writing & Documentation:</span> Technical Writing, Technical Documentation, Developer Documentation, API Documentation, Procedure Writing, Technical Editing, Peer Reviews, Troubleshooting Documentation, Process Flow Documentation, User Guides, Administrator Guides, Knowledge Base Articles, FAQs, Standard Operating Procedures (SOPs)
+      </div>
+      <div class="skill-cat">
+        <span class="skill-label">Documentation Management:</span> Documentation Lifecycle Management, Documentation Governance, Content Governance, Content Management, Knowledge Management, Information Architecture, Structured Authoring, Documentation Tooling, Documentation Analytics, Content Management Systems (CMS), Web Content Management
+      </div>
+      <div class="skill-cat">
+        <span class="skill-label">API & Developer Documentation:</span> REST APIs, OpenAPI, Swagger API, JSON, Markdown, Git, Git Workflows, GitHub, Postman API, HTML, XML, Docs-as-Code
+      </div>
+      <div class="skill-cat">
+        <span class="skill-label">Documentation Tools & Platforms:</span> OpenText Products, Adobe RoboHelp, Adobe FrameMaker, Adobe Experience Manager (AEM), Confluence, ServiceNow, SharePoint, Oxygen XML Editor, Jira, Microsoft Visio, Snagit
+      </div>
+      <div class="skill-cat">
+        <span class="skill-label">Learning & Content Development:</span> Articulate Storyline, Storyline 360, Adobe Captivate, Adobe Captivate Prime, Instructional Design, Digital Content, Microsoft PowerPoint
+      </div>
+      <div class="skill-cat">
+        <span class="skill-label">Quality, Usability & Accessibility:</span> Accessibility, Usability, American English, Content Review, Documentation Quality, Problem Solving, Interpersonal Skills
+      </div>
+      <div class="skill-cat">
+        <span class="skill-label">Professional Practices:</span> Agile Methodologies, Software Development Life Cycle (SDLC), Content Strategy, Content Marketing, Copywriting, Creative Writing, Social Media Content Creation, Social Media Marketing, Social Media Advertising
+      </div>
+      <div class="skill-cat">
+        <span class="skill-label">Additional Tools & Capabilities:</span> Microsoft Office, Microsoft PowerPoint, Snagit, Visio, Storyline 360, Adobe Captivate; Formats: HTML, XML, JSON, Markdown
+      </div>
+    </section>
+  </div>
+</body>
+</html>
